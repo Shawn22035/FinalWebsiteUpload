@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/tos.css">
+    <link rel="icon" href="/images/94150.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <title>Maunga Club</title>
+
+</head>
+<body>
+  <nav class="nav">
+    <a href="http://127.0.0.1:5500/main.html"><img class="logo" src="/images/Maunga_Club_white.png" alt="", style=" width: 35%;"></a>
+    <div class="button_div">
+      <button class="buttons"><a href="http://127.0.0.1:5500/pages/cabins.html" style="text-decoration: none; ">CABINS</a></button>
+      <button class="buttons"><a href="http://127.0.0.1:5500/pages/tos.html#" style="text-decoration: none; ">TOS</a></button>
+      <button class="buttons"><a href="http://127.0.0.1:5500/pages/login.html" style="text-decoration: none; ">LOGIN</a></button>
+    </div>
+  </nav>
+
+   <div style="width: 100%; color: rgba(54, 95, 160, 1); margin-top: 10%; padding-right: 10%; padding-left: 10%;">
+    <center><h1>TERMS OF SERVICE</h1>
+
+      <h2>Terms of Service for Maunga Club Ski Cabins</h2>
+      <p>Welcome to Mauga Club, your gateway to an unparalleled ski cabin experience in the heart of New Zealand's Southern Alps. Before you embark on your alpine adventure, please take a moment to review our terms of service:</p>
+</center>
+      <h2>1. Booking and Reservations:</h2>
+        <p>a. By making a reservation through the Mauga Club website, you agree to provide accurate and complete information. <br> <br>
+        b. All bookings are subject to availability, and confirmation is contingent upon receipt of payment.</p>
+        
+        <h2>2. Payment:</h2>
+        <p>a. Payments are processed securely through our online booking system. <br> <br>
+        b. Prices are displayed in New Zealand Dollars (NZD) and are inclusive of applicable taxes and fees.</p>
+        
+        <h2>3. Cancellation Policy:</h2>
+       <p> a. Cancellation terms vary based on the selected package and are outlined during the booking process. <br> <br>
+        b. Refunds or credits may be provided in accordance with our cancellation policy.</p>
+        
+        <h2>4. Check-In/Check-Out:</h2>
+        <p>a. Check-in time is from [specified time], and check-out is by [specified time]. <br> <br>
+        b. Early check-in or late check-out may be accommodated based on availability and may incur additional charges.</p>
+        
+        <h2>5. House Rules:</h2>
+        <p>a. Guests are expected to adhere to Mauga Club's house rules, which promote a peaceful and respectful environment. <br> <br>
+        b. Any damages caused by guests will be the responsibility of the booking party.</p>
+        
+        <h2>6. Privacy and Data Security:</h2>
+        <p>a. Mauga Club respects your privacy and follows strict data security measures. <br> <br>
+        b. Personal information collected during the booking process is used solely for reservation purposes.</p>
+        
+        <h2>7. Liability: </h2>
+        <p>a. Mauga Club is not responsible for any injuries, accidents, or loss of personal belongings during your stay. <br> <br>
+        b. Guests are advised to obtain travel insurance to cover unforeseen circumstances.</p>
+        
+        <h2>8. Force Majeure:</h2>
+        <p>a. Mauga Club is not liable for events beyond our control, such as natural disasters or government restrictions. <br> <br>
+        b. In such cases, we will make every effort to assist guests with rescheduling or refunds.</p>
+        
+        <h2>9. Feedback and Reviews:</h2>
+        <p>a. We welcome feedback and reviews from guests to continually improve our services. <br> <br>
+        b. Mauga Club reserves the right to respond to and address any concerns raised by guests.</p>
+        
+        <h2 style="font-size: 150%; margin-top: 5%;">By accessing and using the Mauga Club website, you agree to abide by these terms of service. Mauga Club reserves the right to update or modify these terms at any time, and continued use of the website constitutes acceptance of any changes. If you have any questions or concerns, please contact our customer support team. </h2>
+        
+        <h1 style="font-size: 160%; margin-top: 5%;">Thank you for choosing Mauga Club for your ski cabin retreat in New Zealand!</h1>
+    </div>
+
+    
+
+    <!-- <footer>
+      <img src="images/Maunga_Club_white.png" alt="">
+      <div>
+        <h1 style="font-size: 20px;">Copyright Maunga Club 2025, All rights reserved</h1>
+        </div>
+      <div style="margin-right: 30px;">
+        <ul>
+          <h1>Pages</h1>
+          <li><a href="http://127.0.0.1:5500/pages/cabins.html">Cabins</a></li>
+          <li><a href="http://127.0.0.1:5500/pages/tos.html">Contact</a></li>
+          <li><a href="http://127.0.0.1:5500/pages/login.html">Login</a></li>
+        </ul>
+      </div>
+    </footer> -->
+
+    <script>
+      {
+        const nav= document.querySelector(".nav");
+        let lastScrollY = window.scrollY;
+    
+        window.addEventListener("scroll",() => {
+          if(lastScrollY < window.scrollY) {
+            nav.classList.add("nav--hidden");
+          } else {
+            nav.classList.remove("nav--hidden");
+          }
+    
+          lastScrollY = window.scrollY;
+        })
+      }
+    </script>
+</body>
+</html>

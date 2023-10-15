@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+  box-sizing: border-box;
+  white-space: normal;
+  font-family: Montserrat;
+
+}
+
+body {
+  background-color: lightskyblue;
+  margin: 0px;
+  display:flex;
+  font-family: "Montserrat";
+  padding: 0px;
+  overflow-x: hidden;
+  --nav-height:8rem;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  position: fixed;
+  z-index: 99;
+  height: var(--nav-height);
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  transition: transform 0.2s;
+  
+}
+
+nav a{
+  color: black;
+  text-decoration: solid;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+nav button{
+  margin-top: 3rem;
+  font-size: 30px;
+  border-radius: 1rem;
+  border-color: #000;
+  border-width: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 36px 0px, rgba(0, 0, 0, 0.3) 0px 0px 0px 1px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  margin-right: 30px;
+  border: none;
+  height:60px;
+  width: 12rem;
+  right: 0%;
+}
+
+.nav--hidden{
+  transform: translateY(calc(-1 * var(--nav-height)));
+  transition: transform 0.2s;
+}
+
+nav button:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-color: #000;
+  border-width: 5px;
+}
+
+.button_div{
+  justify-content: space-around;
+  position: absolute;
+  right: 0%;
+  margin-right: 10px;
+
+}
+
+.logo{
+    position: absolute;
+    left: 0;
+    top: 20;
+    z-index: 100;
+}
+
+h1{
+  font-size: 600%;
+}
+
+h2{
+  font-size: 300%;
+}
+
+p{
+  font-size: 130%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  height: 400px;
+  background-color: rgb(0, 106, 173);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+footer img{
+  width: 30%;
+  margin-top: 40px;
+}
+
+footer ul{
+  margin-top: 100px;
+  text-decoration: solid;
+  color: white;
+}
+
+footer ul li{
+  list-style-type: none;
+  list-style: none;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: white;
+}
+
+footer a{
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5) ;
+  text-decoration: underline;
+}
+
+
+footer h1{
+  text-decoration:solid;
+  justify-content: center;
+  text-shadow: 2px 2px black;
+}

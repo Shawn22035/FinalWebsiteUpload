@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/cabins.css">
+    <link rel="icon" href="/images/94150.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <title>Maunga Club</title>
+</head>
+
+<body>
+
+    <header>
+<!-- Navigation Bar -->
+        <nav class="nav">
+            <a href="http://127.0.0.1:5500/main.html"><img class="logo" src="/images/Maunga_Club_white.png" alt="", style=" width: 35%;"></a>
+            <div class="button_div">
+                <button class="buttons"><a href="http://127.0.0.1:5500/pages/cabins.html" style="text-decoration: none; ">CABINS</a></button>
+                <button class="buttons"><a href="http://127.0.0.1:5500/pages/tos.html#" style="text-decoration: none; ">TOS</a></button>
+                <button class="buttons"><a href="http://127.0.0.1:5500/pages/login.html" style="text-decoration: none; ">LOGIN</a></button>
+            </div>
+        </nav>
+
+
+
+<!-- Cabins Page Title -->
+        <center><div style="color:  rgb(0, 106, 173); margin-top: 10%;"><h1 style="font-size: 400%;"> CABINS </h1>
+        <p style="font-size: 200%;">All cabin bookings MUST occur from Friday to Sunday</p></div></center>
+
+        <!-- Cabin 1 (Pukeko) -->
+        <div class="cabin_text" style="display: flex; padding: 40px; margin-top: 0%;">
+          <img class="cabin_img" src ="/images/pukeko/chalet_view.jpg" alt="">
+            <center><h1 style="padding: 20px;"> Pukeko Cabins</h1>
+            <p style="padding: 40px;">Tucked away in a remote corner of the Mountain Alps, The Pukeko Cabins are a classic ski log cabin exuding timeless mountain elegance. Crafted from locally sourced timber, this two-story retreat boasts a sprawling stone fireplace, exposed wooden beams, and breathtaking panoramic views of the snow-capped peaks from its oversized windows. Inside, rich leather furnishings and fur throws add a touch of luxury to the rustic charm, while a private sauna offers post-ski relaxation. The wraparound deck provides a front-row seat to the pristine slopes, inviting you to bask in the beauty of the Swiss winter wonderland.</p>
+            <ul>
+              <li>Maximum 15 Children and 6 Adults</li>
+              <li>Optimal for large groups/families wanting a private space</li>
+            </ul>
+            <a href="http://127.0.0.1:5500/pages/book.html#"><button class="bookbutton" role="button" >Book Now!</button></a></center>
+        </div>
+
+        <!-- Cabin 2 (Keruru) -->
+        <div class="cabin_text" style="display: flex; padding: 40px; margin-top: 10%; background-color: rgb(0, 106, 173);">
+          <center><h1 style="padding: 20px;"> Keruru Cabins</h1>
+          <p style="padding: 40px;">Perched high in the Rocky Mountains, The Keruru Cabins is a spacious and luxurious ski log cabin that epitomizes mountain grandeur. Constructed from massive logs and stone, this multi-level retreat offers commanding views of rugged peaks through its towering windows. The interior is a blend of rustic elegance and contemporary design, featuring a grand stone fireplace, a gourmet kitchen, and sumptuous leather sofas. With a private helipad and direct access to some of the region's most challenging slopes, it caters to the adventurous skier seeking both comfort and adrenaline-pumping thrills.</p>
+          <ul>
+            <li>Maximum 30 Children and 10 Adults</li>
+            <li>The largest out of all cabins</li>
+          </ul>
+          <a href="http://127.0.0.1:5500/pages/book.html#"><button class="bookbutton" role="button" >Book Now!</button></a></center>
+          <img class="cabin_img" src ="/images/kereru/cabin_exterior.jpg" alt="">
+          
+        </div>
+
+        <!-- Cabin 3 (Kakapo) -->
+        <div class="cabin_text" style="display: flex; padding: 40px; margin-top: 10%;">
+          <img class="cabin_img" src ="/images/kakapo/cabin_exterior.jpg" alt="">
+            <center><h1 style="padding: 20px;"> Kakapo Cabins</h1>
+            <p style="padding: 40px;">Step inside Kakapo Cabin, and you'll find a warm and inviting interior adorned with Maori-inspired artwork and earthy tones. The open-plan living space features a roaring wood-burning fireplace, perfect for warming up after a day on the nearby ski trails. The kitchen, equipped with modern amenities, encourages gatherings over hearty meals inspired by local cuisine. Each bedroom is a snug retreat, offering a peaceful night's sleep under the soft glow of custom-made wooden lamps.</p>
+            <ul>
+              <li>Maximum 2 Children and 4 Adults</li>
+              <li>Greatest option for smaller families looking for time away</li>
+            </ul>
+            <a href="http://127.0.0.1:5500/pages/book.html#"><button class="bookbutton" role="button" >Book Now!</button></a></center>
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+          <img src="/images/Maunga_Club_white.png" alt="">
+          <div>
+            <h1 style="font-size: 20px;">Copyright Maunga Club 2025, All rights reserved</h1>
+            </div>
+          <div style="margin-right: 30px;">
+            <ul>
+              <h1>Pages</h1>
+              <li><a href="http://127.0.0.1:5500/pages/cabins.html">Cabins</a></li>
+              <li><a href="http://127.0.0.1:5500/pages/tos.html">Contact</a></li>
+              <li><a href="http://127.0.0.1:5500/pages/login.html">Login</a></li>
+            </ul>
+          </div>
+        </footer>
+        
+    </header>
+</body>
+<script>
+// Script to hide Navigation Bar
+  {
+    const nav= document.querySelector(".nav");
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll",() => {
+      if(lastScrollY < window.scrollY) {
+        nav.classList.add("nav--hidden");
+      } else {
+        nav.classList.remove("nav--hidden");
+      }
+
+      lastScrollY = window.scrollY;
+    })
+  }
+</script>
+</html>

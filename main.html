@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/94150.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <title>Maunga Club</title>
+</head>
+
+<body>
+
+<header>
+<!-- NAVIGATION BAR -->
+  <nav class="nav">
+    <a href="http://127.0.0.1:5500/main.html"><img class="logo" src="images/Maunga_Club_white.png" alt="", style=" width: 35%;"></a>
+    <div class="button_div">
+      <button class="buttons"><a href="http://127.0.0.1:5500/pages/cabins.html" style="text-decoration: none; ">CABINS</a></button>
+      <button class="buttons"><a href="http://127.0.0.1:5500/pages/tos.html#" style="text-decoration: none; ">TOS</a></button>
+      <button class="buttons"><a href="http://127.0.0.1:5500/pages/login.html" style="text-decoration: none; ">LOGIN</a></button>
+    </div>
+  </nav>
+
+  </div>
+
+
+  <!-- BACKGROUND IMAGE FOR MAIN SCREEN + MAUNGA CLUB TEXT -->
+  <div class="parent">
+    <div class="image">
+      <center><h1 class="text" style="font-size: 50px; color: aliceblue; top:40%; position:  absolute; justify-content: center; align-items: center; left: 15%;">WELCOME TO THE MAUNGA CLUB!</h1></center>
+      <img src="images/Maunga.png" alt="" style="width: 100%;">
+      
+    </div>
+
+    <!-- MAUNGA CLUB DESCRIPTION -->
+    <div style="height: 60vw; background-image: linear-gradient(white, lightskyblue); margin-top: -30px; justify-content: center; align-items: center;"> 
+      <div style="width:100%; justify-content: center; align-items: center; padding-top: 30%; color: white; color: rgba(54,95,160,1);;">
+        <center>
+          <h2 style="font-size: 5rem;">Who Are The Maunga Club?</h1>
+          <p style="font-size: 1.5rem; padding-left: 100px; padding-right: 100px; margin-top: -30px;">Nestled amidst the snow-capped peaks of the Rocky Mountains, our ski cabin is a cozy alpine retreat that seamlessly combines rustic charm with modern comforts. Inside, an open-concept living area welcomes you with a crackling fireplace and stunning views of the surrounding slopes. Luxurious bedrooms provide a peaceful night's rest, while a private hot tub and deck offer relaxation under the starry sky. Whether you're a passionate skier or simply seeking a tranquil winter escape, our cabin promises a perfect balance of seclusion and convenience, inviting you to create unforgettable memories in the heart of nature.<br>  <br>
+
+            Embrace the serenity of the great outdoors and the warmth of a home away from home in this idyllic mountain retreat. 
+          </p>
+        </center>
+      </div>     
+    </div>
+
+    <!-- SMALL GALLERY PAGE -->
+    <center><h2 style="font-size: 5rem; margin-top: 15%; color: rgba(54,95,160,1);">GALLERY</h1></center>
+    <div class="fancybox" style="margin-top: 20px; ">
+      <div class="line_1">
+      <a data-fancybox="gallery" href="/images/maunga_club_cabin.jpg"><img src="/images/maunga_club_cabin.jpg" alt=""></a>
+      <a data-fancybox="gallery" href="/images/mountain_view_1.jpg"><img src="/images/mountain_view_1.jpg" alt=""></a>
+      <a data-fancybox="gallery" href="/images/kereru/cabin_exterior.jpg"><img src="/images/kereru/cabin_exterior.jpg" alt=""></a>
+      </div>
+      <div class="line_2">
+      <a data-fancybox="gallery" href="/images/kakapo/bunk_room.jpg"><img src="/images/kakapo/bunk_room.jpg" alt=""></a>
+      <a data-fancybox="gallery" href="/images/pukeko/adult_bedroom.jpg"><img src="/images/pukeko/adult_bedroom.jpg" alt=""></a>
+      <a data-fancybox="gallery" href="/images/kereru/kids_bedroom.jpg"><img src="/images/kereru/kids_bedroom.jpg" alt=""></a>
+      </div>
+    </div>
+
+  
+  <!-- JAVA SCRIPT SOURCES JQUERY + FANCYBOX -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="images/Maunga_Club_white.png" alt="">
+    <div>
+      <h1 style="font-size: 20px;">Copyright Maunga Club 2025, All rights reserved</h1>
+      </div>
+    <div style="margin-right: 30px;">
+      <ul>
+        <h1>Pages</h1>
+        <li><a href="http://127.0.0.1:5500/pages/cabins.html">Cabins</a></li>
+        <li><a href="http://127.0.0.1:5500/pages/tos.html">Contact</a></li>
+        <li><a href="http://127.0.0.1:5500/pages/login.html">Login</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+
+
+  // FINDING WHERE THE NAVIGATION BAR IS, HIDING IF SCROLLING DOWN
+  {
+    const nav= document.querySelector(".nav");
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll",() => {
+      if(lastScrollY < window.scrollY) {
+        nav.classList.add("nav--hidden");
+      } else {
+        nav.classList.remove("nav--hidden");
+      }
+
+      lastScrollY = window.scrollY;
+    })
+  }
+  </script>
+</body>
+
+
+</html>

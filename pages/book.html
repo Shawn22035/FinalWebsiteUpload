@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/book.css">
+    <link rel="icon" href="/images/94150.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <title>Maunga Club</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <a href="http://127.0.0.1:5500/main.html"><img class="logo" src="/images/Maunga_Club_white.png" alt="", style=" width: 35%;"></a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <h1>Booking</h1>
+            <h1 style="font-size: 100%; margin-top: 10%;">Please send an email to maungaclu@maungclub.maungaclub including information on:</h1>
+
+            <ul style="font-size: 100%; margin-top: 10%;">
+                <li>Duration of stay</li>
+                <li>Which cabin you intend to stay in</li>
+                <li>Amount of People</li>
+                <li>Check in and Check out dates</li>
+            </ul>
+
+            <h1 style="font-size: 100%; margin-top: 10%;"> to recieve an estimated cost for your stay. <br> <br> Thank you for choosing Maunga Club!
+            </h1>
+
+            <button type="submit" class="btn" style="margin-top: 10%;"><a href="http://127.0.0.1:5500/main.html">Submit</a></button>
+
+        </form>
+        
+    </div>
+
+
+
+
+<script>
+    {
+    const nav= document.querySelector(".nav");
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll",() => {
+    if(lastScrollY < window.scrollY) {
+        nav.classList.add("nav--hidden");
+    } else {
+        nav.classList.remove("nav--hidden");
+    }
+
+    lastScrollY = window.scrollY;
+    })
+}
+</script>
+</html>

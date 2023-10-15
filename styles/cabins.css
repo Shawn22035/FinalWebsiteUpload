@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    white-space: normal;
+
+  }
+
+body {
+    background-color: lightskyblue;
+    margin: 0px;
+    display:flex;
+    font-family: "Montserrat";
+    padding: 0px;
+    overflow-x: hidden;
+    --nav-height:8rem;
+}
+/* Navigation Styling */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  position: fixed;
+  z-index: 99;
+  height: var(--nav-height);
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  transition: transform 0.2s;
+  
+}
+
+nav a{
+  color: black;
+  text-decoration: solid;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+nav button{
+  margin-top: 3rem;
+  font-size: 30px;
+  border-radius: 1rem;
+  border-color: #000;
+  border-width: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 36px 0px, rgba(0, 0, 0, 0.3) 0px 0px 0px 1px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  margin-right: 30px;
+  border: none;
+  height:60px;
+  width: 12rem;
+  right: 0%;
+}
+
+/* Navigation animation */
+.nav--hidden{
+  transform: translateY(calc(-1 * var(--nav-height)));
+  transition: transform 0.2s;
+}
+
+nav button:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-color: #000;
+  border-width: 5px;
+}
+
+/* Buttons in Navigation */
+.button_div{
+  justify-content: space-around;
+  position: absolute;
+  right: 0%;
+  margin-right: 10px;
+
+}
+
+/* Logo in Navigation */
+.logo{
+    position: absolute;
+    left: 0;
+    top: 20;
+    z-index: 100;
+}
+
+
+.cabinimg{
+    border-radius: 10%;
+    width: 50%;
+  }
+  
+  
+  /* Caption text */
+  .cabin_text {
+    color: #f2f2f2;
+    font-size: 20px;
+    bottom: 8px;
+    text-align: center;
+    margin-bottom: 0;
+    justify-content: center;
+    text-shadow: -1px -1px 0 #0000006f, 1px -1px 0 #0000006f, -1px 1px 0 #0000006f, 1px 1px 0 #0000006f;
+    white-space: nowrap;
+}
+  
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .cabin_img {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 1rem;
+    left: 50px;
+  }
+
+/* Book Now! Button decoration */
+.bookbutton {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 40%;
+}
+/* Book Now! Button hover */
+.bookbutton:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.bookbutton:main,
+.bookbutton:focus {
+  user-select: auto;
+}
+
+.bookbutton:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.bookbutton:disabled {
+  cursor: auto;
+}
+
+  footer{
+    height: 400px;
+    background-color: rgb(0, 106, 173);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 100vw;
+  }
+
+  footer img{
+    width: 30%;
+    margin-top: 40px;
+  }
+
+  footer ul{
+    margin-top: 100px;
+    text-decoration: solid;
+    color: white;
+  }
+
+  footer ul li{
+    list-style-type: none;
+    list-style: none;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: white;
+  }
+
+  footer a{
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+  }
+
+  footer a:hover{
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5) ;
+    text-decoration: underline;
+  }
+
+
+  footer h1{
+    text-decoration:solid;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes text{
+    from {
+    transform: translateY(-500px);
+    }
+    to {
+    transform: translateY(0);
+    }
+    }

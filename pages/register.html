@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/register.css">
+    <link rel="icon" href="/images/94150.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <title>Maunga Club</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <a href="http://127.0.0.1:5500/main.html"><img class="logo" src="/images/Maunga_Club_white.png" alt="", style=" width: 35%;"></a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <h1>Registration</h1>
+            <form action="http://127.0.0.1:5500/pages/register2.html?">
+            <div class="inputbox">
+                <input type="text" placeholder="Full Name" required>
+            <div class="inputbox">
+                <input type="text" placeholder="Email" required>
+            <div class="inputbox">
+                <input type="text" placeholder="Password" required>
+            </div>
+            <div class="remember-forgot" style="justify-content: space-between;">
+                <label><input type="checkbox" style="width: 10px; height: 10px;">I agree to the <a href="#">terms & conditions</a></input></label>
+            </div>
+
+            <button class="btn"><a href="http://127.0.0.1:5500/pages/register2.html?">Submit</a></button>
+
+            <div class="register-link">
+                <p>Already have an account?<a href="http://127.0.0.1:5500/pages/login.html"> Login</a></p>
+            </div>
+        </form>
+        
+    </div>
+
+
+
+
+<script>
+    {
+    const nav= document.querySelector(".nav");
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll",() => {
+    if(lastScrollY < window.scrollY) {
+        nav.classList.add("nav--hidden");
+    } else {
+        nav.classList.remove("nav--hidden");
+    }
+
+    lastScrollY = window.scrollY;
+    })
+}
+</script>
+</html>
